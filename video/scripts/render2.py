@@ -84,8 +84,7 @@ class Title:
         s.bg = (top * (1 - g) + bot * g).repeat(W, 1).astype(np.uint8)
         s.layer = build_layer([('t', 'IV LICEO', F_TIT, 92, (255, 255, 255), 16, 8), ('b', 18),
                                ('t', '2026', F_LIGHT, 46, (230, 220, 200), 10, 34),
-                               ('t', 'Scuole CCI · Scuola Alessandro Manzoni', F_LIGHT, 25, (200, 210, 230), 2, 10),
-                               ('t', 'Un recorrido desde que éramos chiquitos', F_LIGHT, 21, (160, 175, 200), 1, 0)], W, H)
+                               ('t', 'Scuole CCI · Scuola Alessandro Manzoni', F_LIGHT, 25, (200, 210, 230), 2, 0)], W, H)
     def frame(s, t):
         c = s.bg.copy(); over(c, s.layer, smooth(t / 1.0)); return c
 
@@ -124,7 +123,7 @@ class Photo:
         return c
 
 class Ending:
-    fade_in, T_TEXT, T_CRED, CRED = 1.2, 6.2, 11.0, 18.0
+    fade_in, T_TEXT, T_CRED, CRED = 1.2, 6.2, 21.0, 18.0
     def __init__(s):
         s.dur = s.T_CRED + s.CRED + 1.5
         ultimas = {}
@@ -140,9 +139,17 @@ class Ending:
             row, col = divmod(k, cols); n_row = cols if row < 3 else len(orden_t) - 18
             x = col * tw + (W - n_row * tw) // 2 + 1 if row == 3 else col * tw + 1
             s.tiles.append((x, row * th + 1, tile, 0.2 + k * 0.18))
-        s.closing = build_layer([('t', 'Grazie di tutto', F_TIT, 88, (255, 255, 255), 4, 6), ('b', 18),
-                                 ('t', 'IV Liceo · 2026', F_LIGHT, 40, (235, 225, 205), 6, 26),
-                                 ('t', 'In bocca al lupo!', F_TIT, 48, (255, 255, 255), 2, 0)], W, H)
+        blanco, crema = (255, 255, 255), (235, 225, 205)
+        s.msgs = [  # (capa, entra, sale)
+            (build_layer([('t', '¡Gracias por estos años!', F_TIT, 64, blanco, 2, 10), ('b', 26),
+                          ('t', 'Que no les falte valentía para equivocarse', F_LIGHT, 34, crema, 1, 6),
+                          ('t', 'ni alegría para volver a empezar.', F_LIGHT, 34, crema, 1, 0)], W, H), 6.2, 11.4),
+            (build_layer([('t', 'Acá escribieron páginas inolvidables.', F_TIT, 52, blanco, 1, 22),
+                          ('t', 'Ahora salgan a escribir', F_LIGHT, 38, crema, 1, 6),
+                          ('t', 'el resto de su historia.', F_LIGHT, 38, crema, 1, 0)], W, H), 11.4, 16.4),
+            (build_layer([('t', 'Grazie di tutto', F_TIT, 88, blanco, 4, 6), ('b', 18),
+                          ('t', 'IV Liceo · 2026', F_LIGHT, 40, crema, 6, 26),
+                          ('t', 'In bocca al lupo!', F_TIT, 48, blanco, 2, 0)], W, H), 16.4, 20.6)]
         items = [('t', 'IV LICEO 2026', F_SEMI, 34, (255, 255, 255), 10, 14), ('b', 40)]
         items += [('t', n, F_LIGHT, 42, (245, 245, 245), 1, 12) for n in NOMBRES]
         items += [('s', 36), ('t', 'Scuole CCI · Scuola Alessandro Manzoni', F_TIT, 28, (200, 210, 230), 1, 0)]
@@ -153,7 +160,7 @@ class Ending:
             a = smooth((t - t0) / 0.6)
             if a > 0: c[y:y + tile.shape[0], x:x + tile.shape[1]] = (c[y:y + tile.shape[0], x:x + tile.shape[1]] * (1 - a) + tile * a).astype(np.uint8)
         c = (c * (1 - 0.84 * smooth((t - s.T_TEXT + .2) / 0.8))).astype(np.uint8)
-        over(c, s.closing, smooth((t - s.T_TEXT) / 0.7) * (1 - smooth((t - 10.4) / 0.7)))
+        for capa, ti, to in s.msgs: over(c, capa, smooth((t - ti) / 0.7) * (1 - smooth((t - (to - 0.7)) / 0.7)))
         if t >= s.T_CRED: over(c, s.cred, 1.0, int(H - (t - s.T_CRED) * s.speed))
         return c
 
