@@ -27,6 +27,14 @@ CARPETA = {'Bianco Agustina': 0, 'Burnett Jazmin': 1, 'Buschittari Valentina': 2
            'Lachner Mateo': 13, 'Lujan Benicio': 14, 'Moure Josefina': 15, 'Prado Bortignon Dalina': 16, 'Preite Marcelo': 17,
            'Ramon Abril': 18, 'Rodriguez Fregonese Micaela': 19, 'Sferco Valentina': 20, 'Surdo Godoy Santiago': 21}
 
+# Foto grupal de cada alumno para el mosaico final (la más reciente que tengan en grupo)
+MOSAICO = {'Bianco Agustina': '05', 'Burnett Jazmin': '10', 'Buschittari Valentina': '03', 'Cayo Maria Antonella': '03',
+           'Covato Benjamin': '06', 'De Santis Thiago': '05', 'De Somma Chiara': '08', 'Di Pasquale Santino Rocco': '07',
+           'Escudero Santiago': '15', 'Estevez Trova Tomas': '05', 'Fernandez Ares Juan Manuel': '05', 'Figari Saborido Renata': '04',
+           'Kramer Matias': '16', 'Lachner Mateo': '07', 'Lujan Benicio': '02', 'Moure Josefina': '09',
+           'Prado Bortignon Dalina': '02', 'Preite Marcelo': '08', 'Ramon Abril': '08', 'Rodriguez Fregonese Micaela': '04',
+           'Sferco Valentina': '06', 'Surdo Godoy Santiago': '07'}
+
 # ---------- utilidades de texto ----------
 def font(p, size): return ImageFont.truetype(p, max(8, int(size * sc)))
 
@@ -126,8 +134,7 @@ class Ending:
     fade_in, T_TEXT, T_CRED, CRED = 1.2, 6.2, 21.0, 18.0
     def __init__(s):
         s.dur = s.T_CRED + s.CRED + 1.5
-        ultimas = {}
-        for r in rows: ultimas[r['alumno']] = r                  # la última de cada alumno = la más grande
+        ultimas = {a: {'archivo': f'{a}/{n}.jpg'} for a, n in MOSAICO.items()}   # fotos grupales elegidas a mano
         cols, rws = 6, 4; tw, th = W // cols, H // rws
         orden_t = sorted(ultimas, key=lambda a: CARPETA[a]); random.Random(5).shuffle(orden_t)
         s.tiles = []
@@ -141,12 +148,12 @@ class Ending:
             s.tiles.append((x, row * th + 1, tile, 0.2 + k * 0.18))
         blanco, crema = (255, 255, 255), (235, 225, 205)
         s.msgs = [  # (capa, entra, sale)
-            (build_layer([('t', '¡Gracias por estos años!', F_TIT, 64, blanco, 2, 10), ('b', 26),
-                          ('t', 'Que no les falte valentía para equivocarse', F_LIGHT, 34, crema, 1, 6),
-                          ('t', 'ni alegría para volver a empezar.', F_LIGHT, 34, crema, 1, 0)], W, H), 6.2, 11.4),
-            (build_layer([('t', 'Acá escribieron páginas inolvidables.', F_TIT, 52, blanco, 1, 22),
-                          ('t', 'Ahora salgan a escribir', F_LIGHT, 38, crema, 1, 6),
-                          ('t', 'el resto de su historia.', F_LIGHT, 38, crema, 1, 0)], W, H), 11.4, 16.4),
+            (build_layer([('t', 'Grazie per questi anni!', F_TIT, 64, blanco, 2, 10), ('b', 26),
+                          ('t', 'Che non vi manchi il coraggio di sbagliare', F_LIGHT, 34, crema, 1, 6),
+                          ('t', 'né la gioia di ricominciare.', F_LIGHT, 34, crema, 1, 0)], W, H), 6.2, 11.4),
+            (build_layer([('t', 'Qui avete scritto pagine indimenticabili.', F_TIT, 52, blanco, 1, 22),
+                          ('t', 'Ora andate a scrivere', F_LIGHT, 38, crema, 1, 6),
+                          ('t', 'il resto della vostra storia.', F_LIGHT, 38, crema, 1, 0)], W, H), 11.4, 16.4),
             (build_layer([('t', 'Grazie di tutto', F_TIT, 88, blanco, 4, 6), ('b', 18),
                           ('t', 'IV Liceo · 2026', F_LIGHT, 40, crema, 6, 26),
                           ('t', 'In bocca al lupo!', F_TIT, 48, blanco, 2, 0)], W, H), 16.4, 20.6)]
