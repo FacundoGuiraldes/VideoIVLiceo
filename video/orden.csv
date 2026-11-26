@@ -1,0 +1,155 @@
+ronda,alumno,foto,edad_estimada,archivo,nota
+1,Bianco Agustina,08,1.5,Bianco Agustina/08.jpg,bebé oscura
+1,Buschittari Valentina,02,2.0,Buschittari Valentina/02.jpg,grupo guardapolvos azules (difícil saber cuál)
+1,De Santis Thiago,03,2.0,De Santis Thiago/03.jpg,en juego con abuela
+1,Di Pasquale Santino Rocco,02,2.0,Di Pasquale Santino Rocco/02.jpg,dos nenes abrazados
+1,Fernandez Ares Juan Manuel,07,2.0,Fernandez Ares Juan Manuel/07.jpg,sentado con juguetes
+1,Figari Saborido Renata,07,2.0,Figari Saborido Renata/07.jpg,delantal amarillo
+1,Kramer Matias,10,2.0,Kramer Matias/10.jpg,bebé con mamadera
+1,Lujan Benicio,10,2.0,Lujan Benicio/10.jpg,jugando
+1,Moure Josefina,04,2.0,Moure Josefina/04.jpg,sobre juguete (recorte)
+1,Preite Marcelo,01,2.0,Preite Marcelo/01.jpg,"jardín gafas de sol (nº del repo = orden alfabético, ver nota)"
+1,Surdo Godoy Santiago,01,2.0,Surdo Godoy Santiago/01.jpg,juego de doctor
+1,Burnett Jazmin,01,2.5,Burnett Jazmin/01.jpg,globo rojo
+1,Escudero Santiago,13,3.0,Escudero Santiago/13.jpg,con fecha impresa en foto
+1,Ramon Abril,10,3.0,Ramon Abril/10.jpg,alitas y anteojos
+1,Rodriguez Fregonese Micaela,03,3.0,Rodriguez Fregonese Micaela/03.jpg,uniforme chiquita
+1,Cayo Maria Antonella,05,4.0,Cayo Maria Antonella/05.jpg,retrato cerca
+1,Estevez Trova Tomas,10,4.0,Estevez Trova Tomas/10.jpg,campera azul en su cuarto
+1,Covato Benjamin,10,5.0,Covato Benjamin/10.jpg,primer plano campera azul
+1,De Somma Chiara,09,5.0,De Somma Chiara/09.jpg,globo estrella
+1,Lachner Mateo,04,5.0,Lachner Mateo/04.jpg,buzos azules abrazados
+1,Prado Bortignon Dalina,03,5.0,Prado Bortignon Dalina/03.jpg,frente a mural
+1,Sferco Valentina,08,7.0,Sferco Valentina/08.jpg,con mamá
+2,Bianco Agustina,01,3.0,Bianco Agustina/01.jpg,campera azul
+2,De Santis Thiago,09,3.0,De Santis Thiago/09.jpg,saludando mural
+2,Fernandez Ares Juan Manuel,06,3.0,Fernandez Ares Juan Manuel/06.jpg,retrato escolar
+2,Figari Saborido Renata,09,3.0,Figari Saborido Renata/09.jpg,sentados en sillas
+2,Lujan Benicio,01,3.0,Lujan Benicio/01.jpg,primer plano
+2,Preite Marcelo,02,3.0,Preite Marcelo/02.jpg,riendo
+2,Ramon Abril,04,4.0,Ramon Abril/04.jpg,primer plano mochila violeta (recortar)
+2,Buschittari Valentina,04,5.0,Buschittari Valentina/04.jpg,bandera chicos
+2,Cayo Maria Antonella,06,5.0,Cayo Maria Antonella/06.jpg,con maestra coronas
+2,Escudero Santiago,01,5.0,Escudero Santiago/01.jpg,uniforme parado
+2,Kramer Matias,17,5.0,Kramer Matias/17.jpg,disfraz folklore
+2,Moure Josefina,02,5.0,Moure Josefina/02.jpg,escenario (foto de foto)
+2,Surdo Godoy Santiago,04,5.0,Surdo Godoy Santiago/04.jpg,cantando con micrófono
+2,De Somma Chiara,01,6.0,De Somma Chiara/01.jpg,retrato campera azul
+2,Estevez Trova Tomas,09,6.0,Estevez Trova Tomas/09.jpg,tres chicos camisetas
+2,Rodriguez Fregonese Micaela,01,6.0,Rodriguez Fregonese Micaela/01.jpg,trenzas remera MICAELA
+2,Burnett Jazmin,04,7.0,Burnett Jazmin/04.jpg,baile folklórico
+2,Di Pasquale Santino Rocco,03,7.0,Di Pasquale Santino Rocco/03.jpg,disfraz folklore
+2,Prado Bortignon Dalina,05,7.0,Prado Bortignon Dalina/05.jpg,disfraz Dorothy con seños
+2,Covato Benjamin,01,8.0,Covato Benjamin/01.jpg,retrato cartulina (tiene etiqueta con nombre)
+2,Lachner Mateo,03,8.0,Lachner Mateo/03.jpg,dos en sillón
+2,Sferco Valentina,02,8.0,Sferco Valentina/02.jpg,captura: recortar barras UI arriba y abajo
+3,Figari Saborido Renata,08,4.0,Figari Saborido Renata/08.jpg,disfraces abrazadas
+3,Lujan Benicio,05,4.0,Lujan Benicio/05.jpg,marioneta gato
+3,De Santis Thiago,02,5.0,De Santis Thiago/02.jpg,sombrero paja
+3,Fernandez Ares Juan Manuel,08,5.0,Fernandez Ares Juan Manuel/08.jpg,disfraz plateado
+3,Preite Marcelo,03,5.0,Preite Marcelo/03.jpg,egresadito
+3,Ramon Abril,06,5.0,Ramon Abril/06.jpg,jardín parada
+3,Bianco Agustina,07,6.0,Bianco Agustina/07.jpg,remera con dibujo
+3,Kramer Matias,11,6.0,Kramer Matias/11.jpg,grupo en aula
+3,Buschittari Valentina,05,7.0,Buschittari Valentina/05.jpg,sonriendo sin dientes
+3,Cayo Maria Antonella,02,7.0,Cayo Maria Antonella/02.jpg,con maestra
+3,De Somma Chiara,05,7.0,De Somma Chiara/05.jpg,retrato escolar
+3,Escudero Santiago,02,7.0,Escudero Santiago/02.jpg,espuma en el pelo
+3,Moure Josefina,03,7.0,Moure Josefina/03.jpg,grupo remeras
+3,Rodriguez Fregonese Micaela,08,7.0,Rodriguez Fregonese Micaela/08.jpg,con mamá
+3,Burnett Jazmin,05,8.0,Burnett Jazmin/05.jpg,pollera azul posando
+3,Prado Bortignon Dalina,09,8.0,Prado Bortignon Dalina/09.jpg,disfraz folklore trenzas
+3,Surdo Godoy Santiago,06,8.0,Surdo Godoy Santiago/06.jpg,diploma bandera
+3,Estevez Trova Tomas,08,9.0,Estevez Trova Tomas/08.jpg,disfraz folklore
+3,Sferco Valentina,06,9.0,Sferco Valentina/06.jpg,comunión
+3,Covato Benjamin,06,10.0,Covato Benjamin/06.jpg,grupo buzos azules
+3,Lachner Mateo,06,11.0,Lachner Mateo/06.jpg,retrato (foto de foto)
+3,Di Pasquale Santino Rocco,01,12.0,Di Pasquale Santino Rocco/01.jpg,bandera
+4,Lujan Benicio,06,5.0,Lujan Benicio/06.jpg,bandera y banda
+4,Preite Marcelo,04,6.0,Preite Marcelo/04.jpg,primo giorno di scuola
+4,Figari Saborido Renata,03,7.0,Figari Saborido Renata/03.jpg,retrato campera azul
+4,Kramer Matias,18,8.0,Kramer Matias/18.jpg,"con familia, disfraz gaucho"
+4,Buschittari Valentina,06,9.0,Buschittari Valentina/06.jpg,plato tejido (tiene iconos UI)
+4,Prado Bortignon Dalina,08,9.0,Prado Bortignon Dalina/08.jpg,disfraz celeste
+4,Burnett Jazmin,07,10.0,Burnett Jazmin/07.jpg,disfraces mago de Oz
+4,De Santis Thiago,01,10.0,De Santis Thiago/01.jpg,obra mago de Oz
+4,Rodriguez Fregonese Micaela,09,10.0,Rodriguez Fregonese Micaela/09.jpg,mochila con ruedas
+4,Sferco Valentina,05,10.0,Sferco Valentina/05.jpg,retrato Scuole CCI 2019
+4,Cayo Maria Antonella,04,11.0,Cayo Maria Antonella/04.jpg,pasto con bebé
+4,Covato Benjamin,05,11.0,Covato Benjamin/05.jpg,obra disfraz
+4,Escudero Santiago,07,11.0,Escudero Santiago/07.jpg,buzo azul fondo escolar
+4,Estevez Trova Tomas,06,11.0,Estevez Trova Tomas/06.jpg,con amigo
+4,Fernandez Ares Juan Manuel,10,11.0,Fernandez Ares Juan Manuel/10.jpg,cancha de vóley
+4,Ramon Abril,09,11.0,Ramon Abril/09.jpg,con estatua
+4,Surdo Godoy Santiago,08,11.0,Surdo Godoy Santiago/08.jpg,pintura en la cara
+4,De Somma Chiara,02,12.0,De Somma Chiara/02.jpg,juego de mesa grupo
+4,Di Pasquale Santino Rocco,05,12.0,Di Pasquale Santino Rocco/05.jpg,sonriendo
+4,Lachner Mateo,01,12.0,Lachner Mateo/01.jpg,cuatro con bandera (repetida con Kramer 01)
+4,Moure Josefina,01,12.0,Moure Josefina/01.jpg,selfie con chicos
+4,Bianco Agustina,04,13.0,Bianco Agustina/04.jpg,hamaca con perro
+5,Lujan Benicio,07,6.0,Lujan Benicio/07.jpg,campera azul
+5,Preite Marcelo,05,7.0,Preite Marcelo/05.jpg,surf
+5,Figari Saborido Renata,05,10.0,Figari Saborido Renata/05.jpg,abrazada con seño
+5,Burnett Jazmin,06,11.0,Burnett Jazmin/06.jpg,mochila rosa
+5,Rodriguez Fregonese Micaela,10,11.0,Rodriguez Fregonese Micaela/10.jpg,con mono mascota
+5,Sferco Valentina,07,11.0,Sferco Valentina/07.jpg,abrazada al papá
+5,Buschittari Valentina,07,12.0,Buschittari Valentina/07.jpg,selfie familia
+5,Covato Benjamin,03,12.0,Covato Benjamin/03.jpg,diploma con abuelos
+5,De Santis Thiago,07,12.0,De Santis Thiago/07.jpg,comunión amigos
+5,Escudero Santiago,08,12.0,Escudero Santiago/08.jpg,con medalla
+5,Kramer Matias,19,12.0,Kramer Matias/19.jpg,"marco ""2º año"""
+5,Prado Bortignon Dalina,07,12.0,Prado Bortignon Dalina/07.jpg,selfie con barbijos
+5,Surdo Godoy Santiago,07,12.0,Surdo Godoy Santiago/07.jpg,cuatro amigos comunión
+5,Cayo Maria Antonella,07,13.0,Cayo Maria Antonella/07.jpg,voley
+5,Bianco Agustina,03,14.0,Bianco Agustina/03.jpg,grupo medallas
+5,Ramon Abril,07,14.0,Ramon Abril/07.jpg,uniforme vertical
+5,Di Pasquale Santino Rocco,10,15.0,Di Pasquale Santino Rocco/10.jpg,rafting
+5,De Somma Chiara,03,16.0,De Somma Chiara/03.jpg,selfie amigas
+5,Estevez Trova Tomas,02,16.0,Estevez Trova Tomas/02.jpg,handball medallas
+5,Fernandez Ares Juan Manuel,04,16.0,Fernandez Ares Juan Manuel/04.jpg,camiseta 14 con nena
+5,Lachner Mateo,08,16.0,Lachner Mateo/08.jpg,nieve amigos
+5,Moure Josefina,07,16.0,Moure Josefina/07.jpg,abanderadas
+6,Lujan Benicio,08,9.0,Lujan Benicio/08.jpg,dos nenes uniforme
+6,Preite Marcelo,07,11.0,Preite Marcelo/07.jpg,primer paseo Argentina
+6,Burnett Jazmin,08,12.0,Burnett Jazmin/08.jpg,grupo sentados con disfraces
+6,Sferco Valentina,04,12.0,Sferco Valentina/04.jpg,con papás en pileta
+6,Buschittari Valentina,09,15.0,Buschittari Valentina/09.jpg,con abuelo uniforme
+6,Cayo Maria Antonella,03,15.0,Cayo Maria Antonella/03.jpg,rafting grupo
+6,Surdo Godoy Santiago,09,15.0,Surdo Godoy Santiago/09.jpg,con mascota búho
+6,Bianco Agustina,06,16.0,Bianco Agustina/06.jpg,cuerpo entero (chica)
+6,Covato Benjamin,07,16.0,Covato Benjamin/07.jpg,Coliseo
+6,De Santis Thiago,05,16.0,De Santis Thiago/05.jpg,equipo voley (lejos)
+6,De Somma Chiara,07,16.0,De Somma Chiara/07.jpg,con bandera
+6,Di Pasquale Santino Rocco,08,16.0,Di Pasquale Santino Rocco/08.jpg,banda
+6,Escudero Santiago,14,16.0,Escudero Santiago/14.jpg,retrato
+6,Fernandez Ares Juan Manuel,09,16.0,Fernandez Ares Juan Manuel/09.jpg,medalla vóley
+6,Kramer Matias,06,16.0,Kramer Matias/06.jpg,mordiendo medalla
+6,Lachner Mateo,09,16.0,Lachner Mateo/09.jpg,grupo campera negra
+6,Prado Bortignon Dalina,04,16.0,Prado Bortignon Dalina/04.jpg,abanderados
+6,Rodriguez Fregonese Micaela,05,16.0,Rodriguez Fregonese Micaela/05.jpg,selfie buzos
+6,Estevez Trova Tomas,01,17.0,Estevez Trova Tomas/01.jpg,estadio bandera
+6,Figari Saborido Renata,04,17.0,Figari Saborido Renata/04.jpg,grupo escenario
+6,Moure Josefina,08,17.0,Moure Josefina/08.jpg,buzo celeste
+6,Ramon Abril,01,17.0,Ramon Abril/01.jpg,uniforme con botella
+7,Preite Marcelo,09,11.0,Preite Marcelo/09.jpg,obra de arte
+7,Lujan Benicio,11,12.0,Lujan Benicio/11.jpg,con compañera medalla
+7,Sferco Valentina,03,14.0,Sferco Valentina/03.jpg,jardín
+7,Burnett Jazmin,02,15.0,Burnett Jazmin/02.jpg,abanderadas
+7,Bianco Agustina,11,17.0,Bianco Agustina/11.jpg,Napoli bandera (tiene etiqueta ubicación)
+7,Buschittari Valentina,10,17.0,Buschittari Valentina/10.jpg,sobre CCI viaje
+7,Cayo Maria Antonella,09,17.0,Cayo Maria Antonella/09.jpg,selfie (recortar franja negra izq.)
+7,Covato Benjamin,04,17.0,Covato Benjamin/04.jpg,camiseta 9 con mamá
+7,De Santis Thiago,12,17.0,De Santis Thiago/12.jpg,Pisa pose (chico en foto)
+7,De Somma Chiara,04,17.0,De Somma Chiara/04.jpg,Pisa selfie
+7,Di Pasquale Santino Rocco,06,17.0,Di Pasquale Santino Rocco/06.jpg,cumbre montaña
+7,Escudero Santiago,15,17.0,Escudero Santiago/15.jpg,grupo buzos celestes
+7,Estevez Trova Tomas,05,17.0,Estevez Trova Tomas/05.jpg,remeras firmadas
+7,Fernandez Ares Juan Manuel,02,17.0,Fernandez Ares Juan Manuel/02.jpg,Coliseo
+7,Figari Saborido Renata,10,17.0,Figari Saborido Renata/10.jpg,Firenze (etiqueta ubicación)
+7,Kramer Matias,14,17.0,Kramer Matias/14.jpg,abanderados diploma
+7,Lachner Mateo,07,17.0,Lachner Mateo/07.jpg,Scuole CCI buzos celestes
+7,Moure Josefina,10,17.0,Moure Josefina/10.jpg,Nápoles selfie
+7,Prado Bortignon Dalina,01,17.0,Prado Bortignon Dalina/01.jpg,Coliseo
+7,Ramon Abril,03,17.0,Ramon Abril/03.jpg,rulos buzo celeste
+7,Rodriguez Fregonese Micaela,06,17.0,Rodriguez Fregonese Micaela/06.jpg,selfie Milán
+7,Surdo Godoy Santiago,02,17.0,Surdo Godoy Santiago/02.jpg,mural Maradona Nápoles

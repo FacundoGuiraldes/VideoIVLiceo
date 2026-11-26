@@ -1,0 +1,177 @@
+# alumno	nº_foto	edad_estimada	nota   (solo las elegidas, en orden de edad; backups al final de la línea 'BK')
+Bianco Agustina	08	1.5	bebé oscura
+Bianco Agustina	01	3	campera azul
+Bianco Agustina	07	6	remera con dibujo
+Bianco Agustina	04	13	hamaca con perro
+Bianco Agustina	03	14	grupo medallas
+Bianco Agustina	06	16	cuerpo entero (chica)
+Bianco Agustina	11	17	Napoli bandera (tiene etiqueta ubicación)
+BK Bianco Agustina	09,02,05,10
+Burnett Jazmin	01	2.5	globo rojo
+Burnett Jazmin	04	7	baile folklórico
+Burnett Jazmin	05	8	pollera azul posando
+Burnett Jazmin	07	10	disfraces mago de Oz
+Burnett Jazmin	06	11	mochila rosa
+Burnett Jazmin	08	12	grupo sentados con disfraces
+Burnett Jazmin	02	15	abanderadas
+BK Burnett Jazmin	03,08,09
+Buschittari Valentina	02	2	grupo guardapolvos azules (difícil saber cuál)
+Buschittari Valentina	04	5	bandera chicos
+Buschittari Valentina	05	7	sonriendo sin dientes
+Buschittari Valentina	06	9	plato tejido (tiene iconos UI)
+Buschittari Valentina	07	12	selfie familia
+Buschittari Valentina	09	15	con abuelo uniforme
+Buschittari Valentina	10	17	sobre CCI viaje
+BK Buschittari Valentina	03,08
+Cayo Maria Antonella	05	4	retrato cerca
+Cayo Maria Antonella	06	5	con maestra coronas
+Cayo Maria Antonella	02	7	con maestra
+Cayo Maria Antonella	04	11	pasto con bebé
+Cayo Maria Antonella	07	13	voley
+Cayo Maria Antonella	03	15	rafting grupo
+Cayo Maria Antonella	09	17	selfie (recortar franja negra izq.)
+BK Cayo Maria Antonella	08,01(rotar)
+Covato Benjamin	10	5	primer plano campera azul
+Covato Benjamin	01	8	retrato cartulina (tiene etiqueta con nombre)
+Covato Benjamin	06	10	grupo buzos azules
+Covato Benjamin	05	11	obra disfraz
+Covato Benjamin	03	12	diploma con abuelos
+Covato Benjamin	07	16	Coliseo
+Covato Benjamin	04	17	camiseta 9 con mamá
+BK Covato Benjamin	09(foto de foto),08,02
+De Santis Thiago	03	2	en juego con abuela
+De Santis Thiago	09	3	saludando mural
+De Santis Thiago	02	5	sombrero paja
+De Santis Thiago	01	10	obra mago de Oz
+De Santis Thiago	07	12	comunión amigos
+De Santis Thiago	05	16	equipo voley (lejos)
+De Santis Thiago	12	17	Pisa pose (chico en foto)
+BK De Santis Thiago	13,08,11,10 ; descartar 04(collage)
+De Somma Chiara	09	5	globo estrella
+De Somma Chiara	01	6	retrato campera azul
+De Somma Chiara	05	7	retrato escolar
+De Somma Chiara	02	12	juego de mesa grupo
+De Somma Chiara	07	16	con bandera
+De Somma Chiara	03	16	selfie amigas
+De Somma Chiara	04	17	Pisa selfie
+BK De Somma Chiara	06,08,10
+Di Pasquale Santino Rocco	02	2	dos nenes abrazados
+Di Pasquale Santino Rocco	03	7	disfraz folklore
+Di Pasquale Santino Rocco	05	12	sonriendo
+Di Pasquale Santino Rocco	01	12	bandera
+Di Pasquale Santino Rocco	10	15	rafting
+Di Pasquale Santino Rocco	08	16	banda
+Di Pasquale Santino Rocco	06	17	cumbre montaña
+BK Di Pasquale Santino Rocco	04,09,07
+Escudero Santiago	13	3	con fecha impresa en foto
+Escudero Santiago	01	5	uniforme parado
+Escudero Santiago	02	7	espuma en el pelo
+Escudero Santiago	07	11	buzo azul fondo escolar
+Escudero Santiago	08	12	con medalla
+Escudero Santiago	14	16	retrato
+Escudero Santiago	15	17	grupo buzos celestes
+BK Escudero Santiago	10,06,03,09,04 ; descartar capturas (Gmail, Instagram)
+Estevez Trova Tomas	10	4	campera azul en su cuarto
+Estevez Trova Tomas	09	6	tres chicos camisetas
+Estevez Trova Tomas	08	9	disfraz folklore
+Estevez Trova Tomas	06	11	con amigo
+Estevez Trova Tomas	02	16	handball medallas
+Estevez Trova Tomas	05	17	remeras firmadas
+Estevez Trova Tomas	01	17	estadio bandera
+BK Estevez Trova Tomas	03(ROTAR 90),07,04
+Fernandez Ares Juan Manuel	07	2	sentado con juguetes
+Fernandez Ares Juan Manuel	06	3	retrato escolar
+Fernandez Ares Juan Manuel	08	5	disfraz plateado
+Fernandez Ares Juan Manuel	10	11	cancha de vóley
+Fernandez Ares Juan Manuel	09	16	medalla vóley
+Fernandez Ares Juan Manuel	04	16	camiseta 14 con nena
+Fernandez Ares Juan Manuel	02	17	Coliseo
+BK Fernandez Ares Juan Manuel	10,01,05
+Figari Saborido Renata	07	2	delantal amarillo
+Figari Saborido Renata	09	3	sentados en sillas
+Figari Saborido Renata	08	4	disfraces abrazadas
+Figari Saborido Renata	03	7	retrato campera azul
+Figari Saborido Renata	05	10	abrazada con seño
+Figari Saborido Renata	04	17	grupo escenario
+Figari Saborido Renata	10	17	Firenze (etiqueta ubicación)
+BK Figari Saborido Renata	01,02,06
+Kramer Matias	10	2	bebé con mamadera
+Kramer Matias	17	5	disfraz folklore
+Kramer Matias	11	6	grupo en aula
+Kramer Matias	18	8	con familia, disfraz gaucho
+Kramer Matias	19	12	marco "2º año"
+Kramer Matias	06	16	mordiendo medalla
+Kramer Matias	14	17	abanderados diploma
+BK Kramer Matias	13,12,20,01,16,09 ; descartar 03(collage)
+Lachner Mateo	04	5	buzos azules abrazados
+Lachner Mateo	03	8	dos en sillón
+Lachner Mateo	06	11	retrato (foto de foto)
+Lachner Mateo	01	12	cuatro con bandera (repetida con Kramer 01)
+Lachner Mateo	08	16	nieve amigos
+Lachner Mateo	09	16	grupo campera negra
+Lachner Mateo	07	17	Scuole CCI buzos celestes
+BK Lachner Mateo	02,05,10
+Lujan Benicio	10	2	jugando
+Lujan Benicio	01	3	primer plano
+Lujan Benicio	05	4	marioneta gato
+Lujan Benicio	06	5	bandera y banda
+Lujan Benicio	07	6	campera azul
+Lujan Benicio	08	9	dos nenes uniforme
+Lujan Benicio	11	12	con compañera medalla
+BK Lujan Benicio	03,04,09,02 ; AVISO: no tiene fotos de adolescente
+Moure Josefina	04	2	sobre juguete (recorte)
+Moure Josefina	02	5	escenario (foto de foto)
+Moure Josefina	03	7	grupo remeras
+Moure Josefina	01	12	selfie con chicos
+Moure Josefina	07	16	abanderadas
+Moure Josefina	08	17	buzo celeste
+Moure Josefina	10	17	Nápoles selfie
+BK Moure Josefina	05(tiene @usuario),09,06
+Prado Bortignon Dalina	03	5	frente a mural
+Prado Bortignon Dalina	05	7	disfraz Dorothy con seños
+Prado Bortignon Dalina	09	8	disfraz folklore trenzas
+Prado Bortignon Dalina	08	9	disfraz celeste
+Prado Bortignon Dalina	07	12	selfie con barbijos
+Prado Bortignon Dalina	04	16	abanderados
+Prado Bortignon Dalina	01	17	Coliseo
+BK Prado Bortignon Dalina	02,10,06(ROTAR 90)
+Preite Marcelo	01	2	jardín gafas de sol (nº del repo = orden alfabético, ver nota)
+Preite Marcelo	02	3	riendo
+Preite Marcelo	03	5	egresadito
+Preite Marcelo	04	6	primo giorno di scuola
+Preite Marcelo	05	7	surf
+Preite Marcelo	07	11	primer paseo Argentina
+Preite Marcelo	09	11	obra de arte
+BK Preite Marcelo	08,06 ; AVISO: solo fotos hasta ~11 años
+Ramon Abril	10	3	alitas y anteojos
+Ramon Abril	04	4	primer plano mochila violeta (recortar)
+Ramon Abril	06	5	jardín parada
+Ramon Abril	09	11	con estatua
+Ramon Abril	07	14	uniforme vertical
+Ramon Abril	03	17	rulos buzo celeste
+Ramon Abril	01	17	uniforme con botella
+BK Ramon Abril	02(marco con texto),08,05
+Rodriguez Fregonese Micaela	03	3	uniforme chiquita
+Rodriguez Fregonese Micaela	01	6	trenzas remera MICAELA
+Rodriguez Fregonese Micaela	08	7	con mamá
+Rodriguez Fregonese Micaela	09	10	mochila con ruedas
+Rodriguez Fregonese Micaela	10	11	con mono mascota
+Rodriguez Fregonese Micaela	05	16	selfie buzos
+Rodriguez Fregonese Micaela	06	17	selfie Milán
+BK Rodriguez Fregonese Micaela	07,02,04
+Sferco Valentina	08	7	con mamá
+Sferco Valentina	02	8	captura: recortar barras UI arriba y abajo
+Sferco Valentina	06	9	comunión
+Sferco Valentina	05	10	retrato Scuole CCI 2019
+Sferco Valentina	07	11	abrazada al papá
+Sferco Valentina	04	12	con papás en pileta
+Sferco Valentina	03	14	jardín
+BK Sferco Valentina	01(captura) ; AVISO: sin fotos de 15-17
+Surdo Godoy Santiago	01	2	juego de doctor
+Surdo Godoy Santiago	04	5	cantando con micrófono
+Surdo Godoy Santiago	06	8	diploma bandera
+Surdo Godoy Santiago	08	11	pintura en la cara
+Surdo Godoy Santiago	07	12	cuatro amigos comunión
+Surdo Godoy Santiago	09	15	con mascota búho
+Surdo Godoy Santiago	02	17	mural Maradona Nápoles
+BK Surdo Godoy Santiago	03,05,10
