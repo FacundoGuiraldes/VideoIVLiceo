@@ -171,12 +171,28 @@ class Ending:
         if t >= s.T_CRED: over(c, s.cred, 1.0, int(H - (t - s.T_CRED) * s.speed))
         return c
 
+class Escudo:
+    """Cierre: escudo del colegio sobre fondo blanco, con zoom muy lento."""
+    fade_in, dur = 1.6, 8.0
+    def __init__(s):
+        im = cv2.imread(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'escudo.jpg'))
+        if im is None: im = cv2.imread('escudo.jpg')
+        m = np.where(im.min(axis=2) < 235)                      # recorta el margen blanco
+        im = im[m[0].min():m[0].max() + 1, m[1].min():m[1].max() + 1]
+        s.logo = im
+    def frame(s, t):
+        z = 1.0 + 0.03 * min(1, t / s.dur); h = int(H * 0.66 * z); w = int(s.logo.shape[1] * h / s.logo.shape[0])
+        lg = cv2.resize(s.logo, (w, h), interpolation=cv2.INTER_AREA)
+        c = np.full((H, W, 3), 255, np.uint8); y0, x0 = (H - h) // 2, (W - w) // 2
+        c[y0:y0 + h, x0:x0 + w] = lg
+        return c
+
 rng = random.Random(11); prev = None; escenas = [Title()]
 for i, r in enumerate(rows):
     h, w = load(r).shape[:2]
     opts = [e for e in (EFECTOS_V if h > w else EFECTOS_H) if e != prev]
     prev = rng.choice(opts); escenas.append(Photo(r, prev))
-escenas.append(Ending())
+escenas.append(Ending()); escenas.append(Escudo())
 escenas[1].fade_in = 1.0
 starts = [0.0]
 for e in escenas[:-1]: starts.append(starts[-1] + e.dur)
