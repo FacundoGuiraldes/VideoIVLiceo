@@ -106,7 +106,8 @@ class Photo:
     def prepare(s):
         im = load(s.r); h, w = im.shape[:2]
         k = min(W / w, H / h)
-        fg = cv2.resize(im, (max(1, int(w * k)), max(1, int(h * k))), interpolation=cv2.INTER_AREA)
+        k2 = k * 1.1                                   # sobremuestreo: el zoom máximo (1.08) nunca agranda la imagen
+        fg = cv2.resize(im, (max(1, round(w * k2)), max(1, round(h * k2))), interpolation=cv2.INTER_AREA if k2 < 1 else cv2.INTER_CUBIC)
         kb = max(W / w, H / h); bg = cv2.resize(im, (int(w * kb) + 1, int(h * kb) + 1))
         y0, x0 = (bg.shape[0] - H) // 2, (bg.shape[1] - W) // 2
         bg = (cv2.GaussianBlur(bg[y0:y0 + H, x0:x0 + W], (0, 0), 25) * 0.55).astype(np.uint8)
@@ -122,12 +123,13 @@ class Photo:
         elif e == 'up': z0 = z1 = 1.06; dy0, dy1 = .03, -.03
         elif e == 'down': z0 = z1 = 1.06; dy0, dy1 = -.03, .03
         z = z0 + (z1 - z0) * u; dx = (dx0 + (dx1 - dx0) * u) * W; dy = (dy0 + (dy1 - dy0) * u) * H
-        fh, fw = fg.shape[:2]; nw, nh = int(fw * z), int(fh * z)
-        f = cv2.resize(fg, (nw, nh), interpolation=cv2.INTER_LINEAR); c = bg.copy()
-        x, y = int((W - nw) // 2 + dx), int((H - nh) // 2 + dy)
-        sx0, sy0, dx0_, dy0_ = max(0, -x), max(0, -y), max(0, x), max(0, y)
-        ww, hh = min(nw - sx0, W - dx0_), min(nh - sy0, H - dy0_)
-        if ww > 0 and hh > 0: c[dy0_:dy0_ + hh, dx0_:dx0_ + ww] = f[sy0:sy0 + hh, sx0:sx0 + ww]
+        fh, fw = fg.shape[:2]; m = z / 1.1                     # escala real respecto de fg (siempre <= 1)
+        tx = (W - fw * m) / 2 + dx; ty = (H - fh * m) / 2 + dy  # posición con subpíxel: sin temblor
+        M = np.float32([[m, 0, tx], [0, m, ty]])
+        f = cv2.warpAffine(fg, M, (W, H), flags=cv2.INTER_AREA if False else cv2.INTER_LINEAR, borderMode=cv2.BORDER_CONSTANT)
+        mk = cv2.warpAffine(np.full((fh, fw), 255, np.uint8), M, (W, H), flags=cv2.INTER_LINEAR)
+        a3 = (mk.astype(np.float32) / 255.0)[..., None]
+        c = (bg * (1 - a3) + f * a3).astype(np.uint8)
         return c
 
 class Ending:
@@ -209,7 +211,7 @@ if audio:
         cmd += ['-i', a[0], '-i', a[1], '-filter_complex', fc, '-map', '0:v', '-map', '[aout]', '-c:a', 'aac', '-b:a', '192k']
     else:
         cmd += ['-i', a[0], '-c:a', 'aac', '-b:a', '192k', '-af', f'afade=t=out:st={total-4}:d=4']
-cmd += ['-t', f'{total:.2f}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-pix_fmt', 'yuv420p', out]
+cmd += ['-t', f'{total:.2f}', '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', out]
 ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
 def scene_at(T):
