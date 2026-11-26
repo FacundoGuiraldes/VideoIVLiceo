@@ -148,7 +148,7 @@ class Ending:
             s.tiles.append((x, row * th + 1, tile, 0.2 + k * 0.18))
         blanco, crema = (255, 255, 255), (235, 225, 205)
         s.msgs = [  # (capa, entra, sale)
-            (build_layer([('t', 'Grazie per questi anni!', F_TIT, 64, blanco, 2, 10), ('b', 26),
+            (build_layer([('t', 'Grazie per tutti questi anni!', F_TIT, 64, blanco, 2, 10), ('b', 26),
                           ('t', 'Che non vi manchi il coraggio di sbagliare', F_LIGHT, 34, crema, 1, 6),
                           ('t', 'né la gioia di ricominciare.', F_LIGHT, 34, crema, 1, 0)], W, H), 6.2, 11.4),
             (build_layer([('t', 'Qui avete scritto pagine indimenticabili.', F_TIT, 52, blanco, 1, 22),
@@ -183,8 +183,17 @@ for e in escenas[:-1]: starts.append(starts[-1] + e.dur)
 total = starts[-1] + escenas[-1].dur
 
 cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-']
-if audio: cmd += ['-i', audio, '-c:a', 'aac', '-b:a', '192k', '-af', f'afade=t=out:st={total-4}:d=4']
-cmd += ['-t', f'{total:.2f}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '21', '-pix_fmt', 'yuv420p', out]
+if audio:
+    a = audio.split(',')
+    if len(a) == 2:   # canción 1 hasta que empieza la ronda 6 (fotos de adolescentes); canción 2 entra con cruce de 3 s y sigue hasta el final
+        t7 = next(starts[i] for i, e in enumerate(escenas) if isinstance(e, Photo) and e.r['ronda'] == '6'); X = 3.0
+        fc = (f"[1:a]volume=-3.5dB,atrim=0:{t7:.2f},asetpts=PTS-STARTPTS,afade=t=out:st={t7-X:.2f}:d={X}[a0];"
+              f"[2:a]atrim=start=14,asetpts=PTS-STARTPTS,dynaudnorm=f=300:g=9:m=6,volume=-5dB,adelay={int((t7-X)*1000)}:all=1,afade=t=in:st={t7-X:.2f}:d={X}[a1];"
+              f"[a0][a1]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.95,afade=t=out:st={total-4:.2f}:d=4[aout]")
+        cmd += ['-i', a[0], '-i', a[1], '-filter_complex', fc, '-map', '0:v', '-map', '[aout]', '-c:a', 'aac', '-b:a', '192k']
+    else:
+        cmd += ['-i', a[0], '-c:a', 'aac', '-b:a', '192k', '-af', f'afade=t=out:st={total-4}:d=4']
+cmd += ['-t', f'{total:.2f}', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '23', '-pix_fmt', 'yuv420p', out]
 ff = subprocess.Popen(cmd, stdin=subprocess.PIPE)
 
 def scene_at(T):
