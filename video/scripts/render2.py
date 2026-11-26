@@ -185,8 +185,8 @@ total = starts[-1] + escenas[-1].dur
 cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-']
 if audio:
     a = audio.split(',')
-    if len(a) == 2:   # canción 1 hasta que empieza la ronda 6 (fotos de adolescentes); canción 2 entra con cruce de 3 s y sigue hasta el final
-        t7 = next(starts[i] for i, e in enumerate(escenas) if isinstance(e, Photo) and e.r['ronda'] == '6'); X = 3.0
+    if len(a) == 2:   # canción 1 hasta que empieza la ronda 5; canción 2 entra con cruce de 3 s y sigue hasta el final
+        t7 = next(starts[i] for i, e in enumerate(escenas) if isinstance(e, Photo) and e.r['ronda'] == '5'); X = 3.0
         fc = (f"[1:a]volume=-3.5dB,atrim=0:{t7:.2f},asetpts=PTS-STARTPTS,afade=t=out:st={t7-X:.2f}:d={X}[a0];"
               f"[2:a]atrim=start=14,asetpts=PTS-STARTPTS,dynaudnorm=f=300:g=9:m=6,volume=-5dB,adelay={int((t7-X)*1000)}:all=1,afade=t=in:st={t7-X:.2f}:d={X}[a1];"
               f"[a0][a1]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.95,afade=t=out:st={total-4:.2f}:d=4[aout]")
