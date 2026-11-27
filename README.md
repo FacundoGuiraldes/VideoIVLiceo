@@ -13,7 +13,12 @@ Para corregir el orden: editar la edad estimada en `seleccion.tsv` (o cambiar la
 
 ## Versión final
 ```
-python3 -I video/scripts/render2.py video/orden.csv <prep> video/crops.json VideoIVLiceo_final.mp4 1920 1080 1.668 7 "felicita.mp3,ojitos.mp3"
+python3 -I video/scripts/render2.py video/orden.csv <prep> video/crops.json VideoIVLiceo_final.mp4 1920 1080 1.668 7 "baile.mp3,ojitos.mp3"
 ```
 La primera canción suena completa durante las rondas 1 a 5 y la segunda entra (con cruce de 3 s) en la ronda 6 y sigue hasta el final.
 Los MP3 y el video final no se suben al repo (música con derechos de autor).
+
+## Actualización (fotos grupales y ajustes)
+- `IV LICEO/Grupales/`: 36 fotos grupales/de eventos (01-02 de 2023; 03-36 de 2026, en orden cronológico). El detalle está en `video/grupales_indice.tsv`.
+- `video/scripts/actualizar_orden.py` quita las fotos descartadas y suma las grupales: las de 2023 van en la ronda 6 (por edad) y las de 2026 forman la ronda 8, al final.
+- Se quitó "In bocca al lupo!" del cierre y el video termina con el escudo de Scuole CCI (`video/escudo.jpg`).

@@ -157,8 +157,7 @@ class Ending:
                           ('t', 'Ora andate a scrivere', F_LIGHT, 38, crema, 1, 6),
                           ('t', 'il resto della vostra storia.', F_LIGHT, 38, crema, 1, 0)], W, H), 11.4, 16.4),
             (build_layer([('t', 'Grazie di tutto', F_TIT, 88, blanco, 4, 6), ('b', 18),
-                          ('t', 'IV Liceo · 2026', F_LIGHT, 40, crema, 6, 26),
-                          ('t', 'In bocca al lupo!', F_TIT, 48, blanco, 2, 0)], W, H), 16.4, 20.6)]
+                          ('t', 'IV Liceo · 2026', F_LIGHT, 40, crema, 6, 0)], W, H), 16.4, 20.6)]
         items = [('t', 'IV LICEO 2026', F_SEMI, 34, (255, 255, 255), 10, 14), ('b', 40)]
         items += [('t', n, F_LIGHT, 42, (245, 245, 245), 1, 12) for n in NOMBRES]
         items += [('s', 36), ('t', 'Scuole CCI · Scuola Alessandro Manzoni', F_TIT, 28, (200, 210, 230), 1, 0)]

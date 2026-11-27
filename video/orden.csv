@@ -20,15 +20,12 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 1,De Somma Chiara,09,5.0,De Somma Chiara/09.jpg,globo estrella
 1,Lachner Mateo,04,5.0,Lachner Mateo/04.jpg,buzos azules abrazados
 1,Prado Bortignon Dalina,03,5.0,Prado Bortignon Dalina/03.jpg,frente a mural
-1,Sferco Valentina,08,7.0,Sferco Valentina/08.jpg,con mamá
 2,Bianco Agustina,01,3.0,Bianco Agustina/01.jpg,campera azul
 2,De Santis Thiago,09,3.0,De Santis Thiago/09.jpg,saludando mural
 2,Fernandez Ares Juan Manuel,06,3.0,Fernandez Ares Juan Manuel/06.jpg,retrato escolar
 2,Figari Saborido Renata,09,3.0,Figari Saborido Renata/09.jpg,sentados en sillas
 2,Lujan Benicio,01,3.0,Lujan Benicio/01.jpg,primer plano
 2,Preite Marcelo,02,3.0,Preite Marcelo/02.jpg,riendo
-2,Ramon Abril,04,4.0,Ramon Abril/04.jpg,primer plano mochila violeta (recortar)
-2,Buschittari Valentina,04,5.0,Buschittari Valentina/04.jpg,bandera chicos
 2,Cayo Maria Antonella,06,5.0,Cayo Maria Antonella/06.jpg,con maestra coronas
 2,Escudero Santiago,01,5.0,Escudero Santiago/01.jpg,uniforme parado
 2,Kramer Matias,17,5.0,Kramer Matias/17.jpg,disfraz folklore
@@ -46,7 +43,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 3,Figari Saborido Renata,08,4.0,Figari Saborido Renata/08.jpg,disfraces abrazadas
 3,Lujan Benicio,05,4.0,Lujan Benicio/05.jpg,marioneta gato
 3,De Santis Thiago,02,5.0,De Santis Thiago/02.jpg,sombrero paja
-3,Fernandez Ares Juan Manuel,08,5.0,Fernandez Ares Juan Manuel/08.jpg,disfraz plateado
 3,Preite Marcelo,03,5.0,Preite Marcelo/03.jpg,egresadito
 3,Ramon Abril,06,5.0,Ramon Abril/06.jpg,jardín parada
 3,Bianco Agustina,07,6.0,Bianco Agustina/07.jpg,remera con dibujo
@@ -56,19 +52,15 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 3,De Somma Chiara,05,7.0,De Somma Chiara/05.jpg,retrato escolar
 3,Escudero Santiago,02,7.0,Escudero Santiago/02.jpg,espuma en el pelo
 3,Moure Josefina,03,7.0,Moure Josefina/03.jpg,grupo remeras
-3,Rodriguez Fregonese Micaela,08,7.0,Rodriguez Fregonese Micaela/08.jpg,con mamá
 3,Burnett Jazmin,05,8.0,Burnett Jazmin/05.jpg,pollera azul posando
 3,Prado Bortignon Dalina,09,8.0,Prado Bortignon Dalina/09.jpg,disfraz folklore trenzas
 3,Surdo Godoy Santiago,06,8.0,Surdo Godoy Santiago/06.jpg,diploma bandera
 3,Estevez Trova Tomas,08,9.0,Estevez Trova Tomas/08.jpg,disfraz folklore
-3,Sferco Valentina,06,9.0,Sferco Valentina/06.jpg,comunión
 3,Covato Benjamin,06,10.0,Covato Benjamin/06.jpg,grupo buzos azules
 3,Lachner Mateo,06,11.0,Lachner Mateo/06.jpg,retrato (foto de foto)
-3,Di Pasquale Santino Rocco,01,12.0,Di Pasquale Santino Rocco/01.jpg,bandera
 4,Lujan Benicio,06,5.0,Lujan Benicio/06.jpg,bandera y banda
 4,Preite Marcelo,04,6.0,Preite Marcelo/04.jpg,primo giorno di scuola
 4,Figari Saborido Renata,03,7.0,Figari Saborido Renata/03.jpg,retrato campera azul
-4,Kramer Matias,18,8.0,Kramer Matias/18.jpg,"con familia, disfraz gaucho"
 4,Buschittari Valentina,06,9.0,Buschittari Valentina/06.jpg,plato tejido (tiene iconos UI)
 4,Prado Bortignon Dalina,08,9.0,Prado Bortignon Dalina/08.jpg,disfraz celeste
 4,Burnett Jazmin,07,10.0,Burnett Jazmin/07.jpg,disfraces mago de Oz
@@ -79,7 +71,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 4,Covato Benjamin,05,11.0,Covato Benjamin/05.jpg,obra disfraz
 4,Escudero Santiago,07,11.0,Escudero Santiago/07.jpg,buzo azul fondo escolar
 4,Estevez Trova Tomas,06,11.0,Estevez Trova Tomas/06.jpg,con amigo
-4,Fernandez Ares Juan Manuel,10,11.0,Fernandez Ares Juan Manuel/10.jpg,cancha de vóley
 4,Ramon Abril,09,11.0,Ramon Abril/09.jpg,con estatua
 4,Surdo Godoy Santiago,08,11.0,Surdo Godoy Santiago/08.jpg,pintura en la cara
 4,De Somma Chiara,02,12.0,De Somma Chiara/02.jpg,juego de mesa grupo
@@ -92,9 +83,7 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 5,Figari Saborido Renata,05,10.0,Figari Saborido Renata/05.jpg,abrazada con seño
 5,Burnett Jazmin,06,11.0,Burnett Jazmin/06.jpg,mochila rosa
 5,Rodriguez Fregonese Micaela,10,11.0,Rodriguez Fregonese Micaela/10.jpg,con mono mascota
-5,Sferco Valentina,07,11.0,Sferco Valentina/07.jpg,abrazada al papá
 5,Buschittari Valentina,07,12.0,Buschittari Valentina/07.jpg,selfie familia
-5,Covato Benjamin,03,12.0,Covato Benjamin/03.jpg,diploma con abuelos
 5,De Santis Thiago,07,12.0,De Santis Thiago/07.jpg,comunión amigos
 5,Escudero Santiago,08,12.0,Escudero Santiago/08.jpg,con medalla
 5,Kramer Matias,19,12.0,Kramer Matias/19.jpg,"marco ""2º año"""
@@ -112,8 +101,8 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 6,Lujan Benicio,08,9.0,Lujan Benicio/08.jpg,dos nenes uniforme
 6,Preite Marcelo,07,11.0,Preite Marcelo/07.jpg,primer paseo Argentina
 6,Burnett Jazmin,08,12.0,Burnett Jazmin/08.jpg,grupo sentados con disfraces
-6,Sferco Valentina,04,12.0,Sferco Valentina/04.jpg,con papás en pileta
-6,Buschittari Valentina,09,15.0,Buschittari Valentina/09.jpg,con abuelo uniforme
+6,Grupales,02,14.5,Grupales/02.jpg,2023-10-19 · manos con arcilla (2023)
+6,Grupales,01,14.5,Grupales/01.jpg,2023-10-19 · pintando 5ºB (2023)
 6,Cayo Maria Antonella,03,15.0,Cayo Maria Antonella/03.jpg,rafting grupo
 6,Surdo Godoy Santiago,09,15.0,Surdo Godoy Santiago/09.jpg,con mascota búho
 6,Bianco Agustina,06,16.0,Bianco Agustina/06.jpg,cuerpo entero (chica)
@@ -138,7 +127,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 7,Bianco Agustina,11,17.0,Bianco Agustina/11.jpg,Napoli bandera (tiene etiqueta ubicación)
 7,Buschittari Valentina,10,17.0,Buschittari Valentina/10.jpg,sobre CCI viaje
 7,Cayo Maria Antonella,09,17.0,Cayo Maria Antonella/09.jpg,selfie (recortar franja negra izq.)
-7,Covato Benjamin,04,17.0,Covato Benjamin/04.jpg,camiseta 9 con mamá
 7,De Santis Thiago,12,17.0,De Santis Thiago/12.jpg,Pisa pose (chico en foto)
 7,De Somma Chiara,04,17.0,De Somma Chiara/04.jpg,Pisa selfie
 7,Di Pasquale Santino Rocco,06,17.0,Di Pasquale Santino Rocco/06.jpg,cumbre montaña
@@ -153,3 +141,37 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 7,Ramon Abril,03,17.0,Ramon Abril/03.jpg,rulos buzo celeste
 7,Rodriguez Fregonese Micaela,06,17.0,Rodriguez Fregonese Micaela/06.jpg,selfie Milán
 7,Surdo Godoy Santiago,02,17.0,Surdo Godoy Santiago/02.jpg,mural Maradona Nápoles
+8,Grupales,03,,Grupales/03.jpg,2026-03-02 · patio con bandera
+8,Grupales,04,,Grupales/04.jpg,2026-04-24 · dron
+8,Grupales,05,,Grupales/05.jpg,2026-04-24 · compus chicas
+8,Grupales,06,,Grupales/06.jpg,2026-04-24 · makey makey trío
+8,Grupales,07,,Grupales/07.jpg,2026-06-05 · Congrats escenario
+8,Grupales,08,,Grupales/08.jpg,2026-06-23 · trío dedo 1
+8,Grupales,09,,Grupales/09.jpg,2026-06-23 · grupo con 7
+8,Grupales,10,,Grupales/10.jpg,2026-06-23 · FALTAN
+8,Grupales,11,,Grupales/11.jpg,2026-06-23 · aula con 4
+8,Grupales,12,,Grupales/12.jpg,2026-06-24 · aeropuerto check-in
+8,Grupales,13,,Grupales/13.jpg,2026-06-24 · aeropuerto chicas
+8,Grupales,14,,Grupales/14.jpg,2026-06-24 · aeropuerto chicos
+8,Grupales,15,,Grupales/15.jpg,2026-07-23 · playa grupal
+8,Grupales,16,,Grupales/16.jpg,2026-08-11 · No siamo IV Liceo
+8,Grupales,17,,Grupales/17.jpg,2026-09-03 · mural
+8,Grupales,18,,Grupales/18.jpg,2026-10-19 · chicos frente al mar
+8,Grupales,19,,Grupales/19.jpg,2026-10-21 · Helados Italia
+8,Grupales,20,,Grupales/20.jpg,s/f · camisetas de fútbol
+8,Grupales,21,,Grupales/21.jpg,s/f · Corinthians en el banco
+8,Grupales,22,,Grupales/22.jpg,s/f · chicas junto al arco
+8,Grupales,23,,Grupales/23.jpg,s/f · poses junto al arco
+8,Grupales,24,,Grupales/24.jpg,2026-11-05 · foto oficial 4º Liceo
+8,Grupales,25,,Grupales/25.jpg,2026-11-06 · ositos cariñosos
+8,Grupales,26,,Grupales/26.jpg,2026-11-06 · Superman y cono
+8,Grupales,27,,Grupales/27.jpg,2026-11-06 · cuatro chicos Tonka
+8,Grupales,28,,Grupales/28.jpg,2026-11-06 · vaqueras
+8,Grupales,29,,Grupales/29.jpg,2026-11-06 · gemelos Tweedle
+8,Grupales,30,,Grupales/30.jpg,2026-11-06 · selfie trío
+8,Grupales,31,,Grupales/31.jpg,2026-11-06 · almuerzo mesa larga 1
+8,Grupales,32,,Grupales/32.jpg,2026-11-06 · almuerzo mesa larga 2
+8,Grupales,33,,Grupales/33.jpg,2026-11-06 · mesa larga pizzas
+8,Grupales,34,,Grupales/34.jpg,2026-11-06 · mesa larga cajas
+8,Grupales,35,,Grupales/35.jpg,2026-11-25 · grupo de uniforme bajo la media sombra
+8,Grupales,36,,Grupales/36.jpg,2026-11 · festejo en la puerta (llegamos)
