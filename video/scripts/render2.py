@@ -132,6 +132,30 @@ class Photo:
         c = (bg * (1 - a3) + f * a3).astype(np.uint8)
         return c
 
+
+class Clip:
+    """Video con su propio sonido: vertical sobre fondo desenfocado."""
+    fade_in = FADE
+    def __init__(s, path, vol_db=None):
+        s.path = path; s.cap = cv2.VideoCapture(path); s.n = int(s.cap.get(cv2.CAP_PROP_FRAME_COUNT)); s.vfps = s.cap.get(cv2.CAP_PROP_FPS)
+        pr = subprocess.run(['ffprobe', '-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', path], capture_output=True, text=True)
+        s.dur = float(pr.stdout.strip()); s.pos = -2; s.last = None; s.cache = None
+    def frame(s, t):
+        idx = min(max(int(t * s.vfps), 0), s.n - 1)
+        if s.cache is not None and s.cache[0] == idx: return s.cache[1].copy()
+        if idx != s.pos + 1: s.cap.set(cv2.CAP_PROP_POS_FRAMES, idx)
+        ok, im = s.cap.read()
+        if not ok: im = s.last
+        else: s.last = im
+        s.pos = idx; h, w = im.shape[:2]
+        kb = max(W / w, H / h); sm = cv2.resize(im, (int(w * kb / 8) + 1, int(h * kb / 8) + 1))
+        sm = cv2.GaussianBlur(sm, (0, 0), 4); bg = cv2.resize(sm, (int(w * kb) + 1, int(h * kb) + 1), interpolation=cv2.INTER_LINEAR)
+        y0, x0 = (bg.shape[0] - H) // 2, (bg.shape[1] - W) // 2
+        c = (bg[y0:y0 + H, x0:x0 + W] * 0.55).astype(np.uint8)
+        k = H / h; fw = int(round(w * k)); fg = cv2.resize(im, (fw, H), interpolation=cv2.INTER_CUBIC)
+        x = (W - fw) // 2; c[:, x:x + fw] = fg
+        s.cache = (idx, c); return c.copy()
+
 class Ending:
     fade_in, T_TEXT, T_CRED, CRED = 1.2, 6.2, 21.0, 18.0
     def __init__(s):
@@ -193,6 +217,10 @@ for i, r in enumerate(rows):
     h, w = load(r).shape[:2]
     opts = [e for e in (EFECTOS_V if h > w else EFECTOS_H) if e != prev]
     prev = rng.choice(opts); escenas.append(Photo(r, prev))
+CLIPS = json.load(open(sys.argv[10])) if len(sys.argv) > 10 else []
+clip_idx = []
+for c in sorted(CLIPS, key=lambda c: -c['despues']):
+    escenas.insert(1 + c['despues'], Clip(c['archivo']))
 escenas.append(Ending()); escenas.append(Escudo())
 escenas[1].fade_in = 1.0
 starts = [0.0]
@@ -202,13 +230,23 @@ total = starts[-1] + escenas[-1].dur
 cmd = ['ffmpeg', '-y', '-loglevel', 'error', '-f', 'rawvideo', '-pix_fmt', 'bgr24', '-s', f'{W}x{H}', '-r', str(FPS), '-i', '-']
 if audio:
     a = audio.split(',')
-    if len(a) == 2:   # canción 1 hasta que empieza la ronda 5; canción 2 entra con cruce de 3 s y sigue hasta el final
+    if len(a) == 2:   # canción 1 hasta la ronda de III Media; canción 2 entra con cruce de 3 s y sigue hasta el final
         t7 = next(starts[i] for i, e in enumerate(escenas) if isinstance(e, Photo) and e.r['nota'].startswith('III Media')); X = 3.0
         t7 = max(t7, total - 259.3 + X + 1)   # que la canción 2 alcance hasta el final
+        cl = [(starts[i], e.dur, e.path) for i, e in enumerate(escenas) if isinstance(e, Clip)]
+        duck = '1'
+        for (c0, cd, _) in cl:
+            duck = f"{duck}*(1-0.9*min(1,max(0,min((t-{c0-0.5:.2f})/0.5,({c0+cd+0.5:.2f}-t)/0.5))))"
         fc = (f"[1:a]volume=-3.5dB,atrim=start=60:end={60+t7:.2f},asetpts=PTS-STARTPTS,afade=t=in:st=0:d=1.5,afade=t=out:st={t7-X:.2f}:d={X}[a0];"
               f"[2:a]atrim=start=14,asetpts=PTS-STARTPTS,dynaudnorm=f=300:g=9:m=6,volume=-5dB,adelay={int((t7-X)*1000)}:all=1,afade=t=in:st={t7-X:.2f}:d={X}[a1];"
-              f"[a0][a1]amix=inputs=2:duration=longest:normalize=0,alimiter=limit=0.95,afade=t=out:st={total-4:.2f}:d=4[aout]")
-        cmd += ['-i', a[0], '-i', a[1], '-filter_complex', fc, '-map', '0:v', '-map', '[aout]', '-c:a', 'aac', '-b:a', '192k']
+              f"[a0][a1]amix=inputs=2:duration=longest:normalize=0,volume='{duck}':eval=frame[mus];")
+        labs = '[mus]'
+        for k, (c0, cd, cp) in enumerate(cl):
+            cmd_in = ['-i', cp]; fc += f"[{3+k}:a]loudnorm=I=-15:TP=-1.5:LRA=11,atrim=0:{cd:.2f},asetpts=PTS-STARTPTS,adelay={int(c0*1000)}:all=1[c{k}];"; labs += f'[c{k}]'
+        fc += f"{labs}amix=inputs={1+len(cl)}:duration=longest:normalize=0,alimiter=limit=0.95,afade=t=out:st={total-4:.2f}:d=4[aout]"
+        cmd += ['-i', a[0], '-i', a[1]]
+        for (_, _, cp) in cl: cmd += ['-i', cp]
+        cmd += ['-filter_complex', fc, '-map', '0:v', '-map', '[aout]', '-c:a', 'aac', '-b:a', '192k']
     else:
         cmd += ['-i', a[0], '-c:a', 'aac', '-b:a', '192k', '-af', f'afade=t=out:st={total-4}:d=4']
 cmd += ['-t', f'{total:.2f}', '-c:v', 'libx264', '-preset', 'medium', '-crf', '16', '-pix_fmt', 'yuv420p', out]
