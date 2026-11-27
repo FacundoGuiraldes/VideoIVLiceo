@@ -73,17 +73,14 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 4,Estevez Trova Tomas,06,11.0,Estevez Trova Tomas/06.jpg,con amigo
 4,Ramon Abril,09,11.0,Ramon Abril/09.jpg,con estatua
 4,Surdo Godoy Santiago,08,11.0,Surdo Godoy Santiago/08.jpg,pintura en la cara
-4,De Somma Chiara,02,12.0,De Somma Chiara/02.jpg,juego de mesa grupo
 4,Di Pasquale Santino Rocco,05,12.0,Di Pasquale Santino Rocco/05.jpg,sonriendo
 4,Lachner Mateo,01,12.0,Lachner Mateo/01.jpg,cuatro con bandera (repetida con Kramer 01)
 4,Moure Josefina,01,12.0,Moure Josefina/01.jpg,selfie con chicos
-4,Bianco Agustina,04,13.0,Bianco Agustina/04.jpg,hamaca con perro
 5,Lujan Benicio,07,6.0,Lujan Benicio/07.jpg,campera azul
 5,Preite Marcelo,05,7.0,Preite Marcelo/05.jpg,surf
 5,Figari Saborido Renata,05,10.0,Figari Saborido Renata/05.jpg,abrazada con seño
 5,Burnett Jazmin,06,11.0,Burnett Jazmin/06.jpg,mochila rosa
 5,Rodriguez Fregonese Micaela,10,11.0,Rodriguez Fregonese Micaela/10.jpg,con mono mascota
-5,Buschittari Valentina,07,12.0,Buschittari Valentina/07.jpg,selfie familia
 5,De Santis Thiago,07,12.0,De Santis Thiago/07.jpg,comunión amigos
 5,Escudero Santiago,08,12.0,Escudero Santiago/08.jpg,con medalla
 5,Kramer Matias,19,12.0,Kramer Matias/19.jpg,"marco ""2º año"""
@@ -104,8 +101,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 5,De Santis Thiago,M05,10.5,De Santis Thiago/M05.jpg,III Media (De Santis 05)
 5,Fernandez Ares Juan Manuel,M10,10.5,Fernandez Ares Juan Manuel/M10.jpg,III Media (Fernandez Ares 10)
 5,Figari Saborido Renata,M01,10.5,Figari Saborido Renata/M01.jpg,III Media (Figari Saborido 01)
-5,Di Pasquale Santino Rocco,M10,11,Di Pasquale Santino Rocco/M10.jpg,III Media (Di Pasquale 10)
-5,Escudero Santiago,M10,11,Escudero Santiago/M10.jpg,III Media (Escudero 10)
 5,Rodriguez Fregonese Micaela,M09,11.5,Rodriguez Fregonese Micaela/M09.jpg,III Media (Rodriguez Fregonese 09)
 5,Bianco Agustina,M07,12,Bianco Agustina/M07.jpg,III Media (Bianco 07)
 5,Burnett Jazmin,M04,12,Burnett Jazmin/M04.jpg,III Media (Burnett 04)
@@ -114,8 +109,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 5,Kramer Matias,M03,12,Kramer Matias/M03.jpg,III Media (Kramer 03)
 5,Surdo Godoy Santiago,M09,12,Surdo Godoy Santiago/M09.jpg,III Media (Surdo Godoy 09)
 5,Prado Bortignon Dalina,M04,12.5,Prado Bortignon Dalina/M04.jpg,III Media (Prado Bortignon 04)
-5,Sferco Valentina,M07,12.5,Sferco Valentina/M07.jpg,III Media (Sferco 07)
-5,De Somma Chiara,M02,13,De Somma Chiara/M02.jpg,III Media (De Somma 02)
 5,Moure Josefina,M05,13,Moure Josefina/M05.jpg,III Media (Moure 05)
 5,Ramon Abril,M07,13,Ramon Abril/M07.jpg,III Media (Ramon 07)
 5,Lachner Mateo,M03,13.5,Lachner Mateo/M03.jpg,III Media (Lachner 03)
@@ -139,28 +132,22 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 5,Ramon Abril,M01,13.2,Ramon Abril/M01.jpg,III Media (Ramon 01)
 5,De Somma Chiara,M05,13.5,De Somma Chiara/M05.jpg,III Media (De Somma 05)
 5,Moure Josefina,M09,13.5,Moure Josefina/M09.jpg,III Media (Moure 09)
-5,Lachner Mateo,M06,14,Lachner Mateo/M06.jpg,III Media (Lachner 06)
 5,Lujan Benicio,M21,11,Lujan Benicio/M21.jpg,III Media (LUJAN 21)
-5,Buschittari Valentina,M03,11.5,Buschittari Valentina/M03.jpg,III Media (Buschittari 03)
 5,De Santis Thiago,M01,11.5,De Santis Thiago/M01.jpg,III Media (De Santis 01)
-5,Di Pasquale Santino Rocco,M08,12,Di Pasquale Santino Rocco/M08.jpg,III Media (Di Pasquale 08)
 5,Cayo Maria Antonella,M02,13,Cayo Maria Antonella/M02.jpg,III Media (Cayo 02)
 5,Escudero Santiago,M13,13,Escudero Santiago/M13.jpg,III Media (Escudero 13)
 5,Estevez Trova Tomas,M13,13,Estevez Trova Tomas/M13.jpg,III Media (Estevez Trova 13)
-5,Fernandez Ares Juan Manuel,M11,13,Fernandez Ares Juan Manuel/M11.jpg,III Media (Fernandez Ares 11)
 5,Figari Saborido Renata,M10,13,Figari Saborido Renata/M10.jpg,III Media (Figari Saborido 10)
 5,Kramer Matias,M04,13,Kramer Matias/M04.jpg,III Media (Kramer 04)
 5,Burnett Jazmin,M09,13.5,Burnett Jazmin/M09.jpg,III Media (Burnett 09)
 5,Covato Benjamin,M04,13.5,Covato Benjamin/M04.jpg,III Media (Covato 04)
 5,Prado Bortignon Dalina,M05,13.5,Prado Bortignon Dalina/M05.jpg,III Media (Prado Bortignon 05)
 5,Ramon Abril,M02,13.5,Ramon Abril/M02.jpg,III Media (Ramon 02)
-5,Sferco Valentina,M16,13.5,Sferco Valentina/M16.jpg,III Media (Sferco 16)
 5,Bianco Agustina,M03,14,Bianco Agustina/M03.jpg,III Media (Bianco 03)
 5,Moure Josefina,M10,14,Moure Josefina/M10.jpg,III Media (Moure 10)
 5,Rodriguez Fregonese Micaela,M13,14,Rodriguez Fregonese Micaela/M13.jpg,III Media (Rodriguez Fregonese 13)
 5,Surdo Godoy Santiago,M01,14,Surdo Godoy Santiago/M01.jpg,III Media (Surdo Godoy 01)
 5,De Somma Chiara,M08,14.5,De Somma Chiara/M08.jpg,III Media (De Somma 08)
-5,Lachner Mateo,M05,14.5,Lachner Mateo/M05.jpg,III Media (Lachner 05)
 6,Lujan Benicio,08,9.0,Lujan Benicio/08.jpg,dos nenes uniforme
 6,Preite Marcelo,07,11.0,Preite Marcelo/07.jpg,primer paseo Argentina
 6,Burnett Jazmin,08,12.0,Burnett Jazmin/08.jpg,grupo sentados con disfraces
@@ -171,9 +158,9 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 6,Bianco Agustina,06,16.0,Bianco Agustina/06.jpg,cuerpo entero (chica)
 6,Covato Benjamin,07,16.0,Covato Benjamin/07.jpg,Coliseo
 6,De Santis Thiago,05,16.0,De Santis Thiago/05.jpg,equipo voley (lejos)
+4,Bianco Agustina,04,13.0,Bianco Agustina/04.jpg,hamaca con perro
 6,De Somma Chiara,07,16.0,De Somma Chiara/07.jpg,con bandera
 6,Di Pasquale Santino Rocco,08,16.0,Di Pasquale Santino Rocco/08.jpg,banda
-6,Escudero Santiago,14,16.0,Escudero Santiago/14.jpg,retrato
 6,Fernandez Ares Juan Manuel,09,16.0,Fernandez Ares Juan Manuel/09.jpg,medalla vóley
 6,Kramer Matias,06,16.0,Kramer Matias/06.jpg,mordiendo medalla
 6,Lachner Mateo,09,16.0,Lachner Mateo/09.jpg,grupo campera negra
@@ -182,9 +169,7 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 6,Estevez Trova Tomas,01,17.0,Estevez Trova Tomas/01.jpg,estadio bandera
 6,Figari Saborido Renata,04,17.0,Figari Saborido Renata/04.jpg,grupo escenario
 6,Moure Josefina,08,17.0,Moure Josefina/08.jpg,buzo celeste
-6,Ramon Abril,01,17.0,Ramon Abril/01.jpg,uniforme con botella
 7,Preite Marcelo,09,11.0,Preite Marcelo/09.jpg,obra de arte
-7,Lujan Benicio,11,12.0,Lujan Benicio/11.jpg,con compañera medalla
 7,Sferco Valentina,03,14.0,Sferco Valentina/03.jpg,jardín
 7,Burnett Jazmin,02,15.0,Burnett Jazmin/02.jpg,abanderadas
 7,Bianco Agustina,11,17.0,Bianco Agustina/11.jpg,Napoli bandera (tiene etiqueta ubicación)
@@ -192,7 +177,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 7,Cayo Maria Antonella,09,17.0,Cayo Maria Antonella/09.jpg,selfie (recortar franja negra izq.)
 7,De Santis Thiago,12,17.0,De Santis Thiago/12.jpg,Pisa pose (chico en foto)
 7,De Somma Chiara,04,17.0,De Somma Chiara/04.jpg,Pisa selfie
-7,Di Pasquale Santino Rocco,06,17.0,Di Pasquale Santino Rocco/06.jpg,cumbre montaña
 7,Escudero Santiago,15,17.0,Escudero Santiago/15.jpg,grupo buzos celestes
 7,Estevez Trova Tomas,05,17.0,Estevez Trova Tomas/05.jpg,remeras firmadas
 7,Fernandez Ares Juan Manuel,02,17.0,Fernandez Ares Juan Manuel/02.jpg,Coliseo
@@ -201,7 +185,6 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 7,Lachner Mateo,07,17.0,Lachner Mateo/07.jpg,Scuole CCI buzos celestes
 7,Moure Josefina,10,17.0,Moure Josefina/10.jpg,Nápoles selfie
 7,Prado Bortignon Dalina,01,17.0,Prado Bortignon Dalina/01.jpg,Coliseo
-7,Ramon Abril,03,17.0,Ramon Abril/03.jpg,rulos buzo celeste
 7,Rodriguez Fregonese Micaela,06,17.0,Rodriguez Fregonese Micaela/06.jpg,selfie Milán
 7,Surdo Godoy Santiago,02,17.0,Surdo Godoy Santiago/02.jpg,mural Maradona Nápoles
 8,Grupales,36,,Grupales/36.jpg,2026-11 · festejo en la puerta (llegamos)
@@ -219,6 +202,7 @@ ronda,alumno,foto,edad_estimada,archivo,nota
 8,Grupales,14,,Grupales/14.jpg,2026-06-24 · aeropuerto chicos
 8,Grupales,15,,Grupales/15.jpg,2026-07-23 · playa grupal
 8,Grupales,16,,Grupales/16.jpg,2026-08-11 · No siamo IV Liceo
+8,Grupales,37,,Grupales/37.jpg,2026-08-17 · acto 17 de Agosto
 8,Grupales,17,,Grupales/17.jpg,2026-09-03 · mural
 8,Grupales,18,,Grupales/18.jpg,2026-10-19 · chicos frente al mar
 8,Grupales,19,,Grupales/19.jpg,2026-10-21 · Helados Italia
